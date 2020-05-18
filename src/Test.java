@@ -1,10 +1,11 @@
+import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
 
 class Test {
     public static void main(String[] args) {
         try {
-            List<Integer> numbers = NumbersService.createNumbersList();
+            List<Integer> numbers = new ArrayList<>();
             NumbersReader.readNumbersFromUser(numbers);
             if (numbers.isEmpty())
                 throw new IndexOutOfBoundsException("Lista liczb jest pusta");

@@ -1,7 +1,7 @@
 import java.util.List;
 import java.util.Scanner;
 
-abstract class NumbersReader {
+class NumbersReader {
     public static void readNumbersFromUser(List<Integer> numbers) {
         int userInput = 0;
         while (userInput >= 0) {

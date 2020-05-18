@@ -1,11 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-abstract class NumbersService {
-    public static List<Integer> createNumbersList() {
-        return new ArrayList<>();
-    }
-
+class NumbersService {
     public static List<Integer> reverseNumbers(List<Integer> numbers) {
         List<Integer> reversedNumbers = new ArrayList<>();
         for (int i = numbers.size(); i > 0; i--) {
